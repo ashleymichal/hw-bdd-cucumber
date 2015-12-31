@@ -1,7 +1,6 @@
 BDD and Cucumber
 ================
 
-
 In this homework you will create user stories to describe a feature of a SaaS app, use the Cucumber tool to turn those stories into executable acceptance tests, and run the tests against your SaaS app.  
 
 Specifically, you will write Cucumber scenarios that test the happy
