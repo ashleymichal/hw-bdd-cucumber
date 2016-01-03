@@ -1,5 +1,5 @@
 class Movie < ActiveRecord::Base
-  attr_accessible :title, :rating, :description, :release_date
+  attr_accessible :title, :rating, :description, :release_date, :director
 
   class Movie::InvalidKeyError < StandardError ; end
 

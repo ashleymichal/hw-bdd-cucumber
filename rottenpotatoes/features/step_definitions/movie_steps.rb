@@ -18,3 +18,7 @@ end
 Then /I should see all the movies/ do
   expect(page).to have_css("tr", count: 11)
 end
+
+Then /the director of "(.*)" should be "(.*)"/ do |movie, director|
+	expect(page).to have_content("Director: #{director}")
+end
