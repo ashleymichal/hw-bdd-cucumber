@@ -62,8 +62,8 @@ class MoviesController < ApplicationController
   end
 
   def similar_movies
+    # rewrite as model method that returns either a list or nil
     @movie = Movie.find params[:id]
-    # debugger
     if @movie.director.to_s.empty?
       flash[:notice] = "'#{@movie.title}' has no director info."
       redirect_to movies_path
