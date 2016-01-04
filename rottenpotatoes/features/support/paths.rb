@@ -19,6 +19,14 @@ module NavigationHelpers
       then movie_id = Movie.find_by_title($1).id
       "/movies/#{movie_id}/edit"
 
+    when /^the details page for "(.*)"$/
+      then movie_id = Movie.find_by_title($1).id
+      "/movies/#{movie_id}"
+
+    when /^the Similar Movies page for "(.*)"$/
+      then movie_id = Movie.find_by_title($1).id
+      "/movies/#{movie_id}/similar_movies"
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
@@ -39,3 +47,4 @@ module NavigationHelpers
 end
 
 World(NavigationHelpers)
+

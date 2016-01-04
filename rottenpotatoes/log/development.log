@@ -914,3 +914,135 @@ Migrating to AddDirectorToMovies (20160103190452)
   [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
   [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160103190452')
   [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20111119180638')[0m
+
+
+Started GET "/assets/rails.png" for ::1 at 2016-01-03 17:30:59 -0600
+
+
+Started GET "/assets/rails.png" for ::1 at 2016-01-03 17:31:03 -0600
+
+
+Started GET "/movies" for ::1 at 2016-01-03 17:31:04 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (2.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (24.1ms)
+Completed 200 OK in 101ms (Views: 84.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2016-01-03 17:31:04 -0600
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2016-01-03 17:31:04 -0600
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2016-01-03 17:31:04 -0600
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2016-01-03 17:31:04 -0600
+
+
+Started GET "/movies" for ::1 at 2016-01-03 17:31:04 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2016-01-03 17:31:04 -0600
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2016-01-03 17:31:04 -0600
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2016-01-03 17:31:04 -0600
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2016-01-03 17:31:04 -0600
+
+
+Started GET "/movies/1" for ::1 at 2016-01-03 17:31:08 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2016-01-03 17:31:08 -0600
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2016-01-03 17:31:08 -0600
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2016-01-03 17:31:08 -0600
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2016-01-03 17:31:08 -0600
+
+
+Started GET "/movies/1/edit" for ::1 at 2016-01-03 17:31:20 -0600
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/edit.html.haml within layouts/application (34.2ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2016-01-03 17:31:20 -0600
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2016-01-03 17:31:20 -0600
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2016-01-03 17:31:20 -0600
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2016-01-03 17:31:20 -0600
+
+
+Started GET "/movies/1" for ::1 at 2016-01-03 18:10:55 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 35ms (Views: 19.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2016-01-03 18:10:56 -0600
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2016-01-03 18:10:56 -0600
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2016-01-03 18:10:56 -0600
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2016-01-03 18:10:56 -0600
+
+
+Started GET "/movies/1/similar_movies" for ::1 at 2016-01-03 18:10:57 -0600
+Processing by MoviesController#similar_movies as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL[0m
+  Rendered movies/similar_movies.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2016-01-03 18:10:57 -0600
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2016-01-03 18:10:57 -0600
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2016-01-03 18:10:57 -0600
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2016-01-03 18:10:57 -0600
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "description" text, "release_date" datetime, "created_at" datetime, "updated_at" datetime, "director" varchar) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160103190452')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20111119180638')[0m
