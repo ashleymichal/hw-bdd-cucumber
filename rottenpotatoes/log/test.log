@@ -4925,6 +4925,7 @@ Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
@@ -16654,3 +16655,5 @@ Processing by MoviesController#index as HTML
   Rendered movies/index.html.haml within layouts/application (4.6ms)
 Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.3ms)
   [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+=======
+>>>>>>> parent of c1e848a... Completed Ch 8 workthrough, start projects tomorrow
