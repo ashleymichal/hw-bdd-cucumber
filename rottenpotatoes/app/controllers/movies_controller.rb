@@ -1,4 +1,8 @@
 class MoviesController < ApplicationController
+  
+  def movie_params
+    params.require(:movie).permit(:title, :rating, :description, :release_date, :director)
+  end
 
   def show
     id = params[:id] # retrieve movie ID from URI route
@@ -34,7 +38,7 @@ class MoviesController < ApplicationController
   end
 
   def create
-    @movie = Movie.create!(params[:movie])
+    @movie = Movie.create!(movie_params)
     flash[:notice] = "#{@movie.title} was successfully created."
     redirect_to movies_path
   end
@@ -45,7 +49,7 @@ class MoviesController < ApplicationController
 
   def update
     @movie = Movie.find params[:id]
-    @movie.update_attributes!(params[:movie])
+    @movie.update_attributes!(movie_params)
     flash[:notice] = "#{@movie.title} was successfully updated."
     redirect_to movie_path(@movie)
   end
