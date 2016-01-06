@@ -23,4 +23,8 @@ class Movie < ActiveRecord::Base
   	"#{title} (#{rating})"
   end
 
+  def self.similar_movies search_term
+    Movie.where(search_term).order(:release_date => :asc)
+  end
+
 end

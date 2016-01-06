@@ -31,5 +31,19 @@ describe MoviesController do
 		end
 
 	end
-	
+
+	describe 'finding similar movies' do
+
+		context 'looking for movies with the same director' do
+
+			it 'calls the model method that searches by director' do
+				movie = Movie.create
+				expect(Movie).to receive(:similar_movies).and_return(@fake_results)
+				get :similar_movies, :id => movie
+			end
+
+		end
+
+	end
+
 end
