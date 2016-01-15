@@ -26,7 +26,7 @@ describe MoviesController do
 			end
 			
 			it 'makes the TMDb search results available to that template' do
-				expect(assigns(:movies)).to eq(@fake_results)
+				expect(assigns(:results)).to eq(@fake_results)
 			end
 
 		end
