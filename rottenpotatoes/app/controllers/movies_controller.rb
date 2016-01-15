@@ -38,9 +38,14 @@ class MoviesController < ApplicationController
   end
 
   def create
-    @movie = Movie.create!(movie_params)
-    flash[:notice] = "#{@movie.title} was successfully created."
-    redirect_to movies_path
+    @movie = Movie.new(movie_params)
+    if @movie.save
+      flash[:notice] = "#{@movie.title} was successfully created."
+      redirect_to @movie
+    else
+      render new_movie_path
+      # debugger
+    end
   end
 
   def edit
@@ -62,7 +67,14 @@ class MoviesController < ApplicationController
   end
 
   def search_tmdb
-    @movies = Movie.find_in_tmdb(params[:search_terms])
+    @search_terms = params[:search_terms]
+    @results = Movie.find_in_tmdb(@search_terms)
+    if @results.empty?
+      flash[:notice] = "#{@search_terms} was not found in TMDb."
+      redirect_to movies_path
+    end
+    # flash[:warning] = "'#{params[:search_terms]}' was not found in TMDb."
+    # redirect_to movies_path
   end
 
   def similar_movies

@@ -5,6 +5,10 @@ Given /the following movies exist/ do |movies_table|
   end
 end
 
+Given(/I have added "(.*?)" with rating "(.*?)"$/) do |title, rating|
+  Movie.create(:title => title, :rating => rating)
+end
+
 Then /I should see "(.*)" before "(.*)"/ do |e1, e2|
   page.body.index(e1) < page.body.index(e2)
 end

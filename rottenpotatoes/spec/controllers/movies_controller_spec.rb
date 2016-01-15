@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'factory_girl_rails'
 
 describe MoviesController do
 
@@ -37,9 +38,9 @@ describe MoviesController do
 		context 'looking for movies with the same director' do
 
 			it 'calls the model method that searches by director' do
-				movie = Movie.create
+				@movie = FactoryGirl.create(:movie)
 				expect(Movie).to receive(:similar_movies).and_return(@fake_results)
-				get :similar_movies, :id => movie
+				get :similar_movies, :id => @movie.id
 			end
 
 		end
