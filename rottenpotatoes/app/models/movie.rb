@@ -1,5 +1,6 @@
 class Movie < ActiveRecord::Base
   attr_accessible :title, :rating, :description, :release_date, :director
+  validates :title, :presence => true
 
   class Movie::InvalidKeyError < StandardError ; end
 

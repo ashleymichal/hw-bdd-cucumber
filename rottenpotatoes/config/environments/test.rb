@@ -1,4 +1,6 @@
 Rottenpotatoes::Application.configure do
+  
+  # Tmdb::Api.key("d386198b8ada148ccfa29db06c01effd")
   # Settings specified here will take precedence over those in config/application.rb
 
   # The test environment is used exclusively to run your application's
