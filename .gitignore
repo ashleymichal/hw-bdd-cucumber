@@ -40,3 +40,7 @@ Thumbs.db
 ###################################
 rottenpotatoes/config/environments/test.rb
 rottenpotatoes/config/environments/development.rb
+
+# Temporary Files #
+###################
+rottenpotatoes/tmp

@@ -10,7 +10,7 @@ Given(/I have added "(.*?)" with rating "(.*?)"$/) do |title, rating|
 end
 
 Then /I should see "(.*)" before "(.*)"/ do |e1, e2|
-  page.body.index(e1) < page.body.index(e2)
+  expect(page.body.index(e1)).to be < page.body.index(e2)
 end
 
 When /I (un)?check the following ratings: "(.*)"/ do |uncheck, rating_list|
