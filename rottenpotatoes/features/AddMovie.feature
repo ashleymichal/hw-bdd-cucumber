@@ -19,4 +19,4 @@ Scenario: Leave title blank (sad path)
 	When I fill in "Title" with ""
 	When I select "PG-13" from "Rating"
 	And I press "Save Changes"
-	Then I should be on the Create New Movie page
+	Then I should see "Create New Movie"

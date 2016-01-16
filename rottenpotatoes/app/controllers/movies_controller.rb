@@ -43,7 +43,7 @@ class MoviesController < ApplicationController
       flash[:notice] = "#{@movie.title} was successfully created."
       redirect_to @movie
     else
-      render new_movie_path
+      render 'new'
       # debugger
     end
   end

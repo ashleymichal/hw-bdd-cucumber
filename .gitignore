@@ -24,6 +24,7 @@
 ######################
 rottenpotatoes/log/*
 rottenpotatoes/db/*.sqlite3
+rottenpotatoes/.byebug_history
 
 # OS generated files #
 ######################
