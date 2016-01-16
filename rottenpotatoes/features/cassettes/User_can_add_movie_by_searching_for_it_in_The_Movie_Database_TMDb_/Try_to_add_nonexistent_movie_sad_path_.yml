@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/search/movie?api_key=d386198b8ada148ccfa29db06c01effd&query=Movie%20That%20Does%20Not%20Exist
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=21600
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sat, 16 Jan 2016 19:16:36 GMT
+      Etag:
+      - 72b32a1f754ba1c09b3695e0cb6cde7f
+      Server:
+      - openresty
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '39'
+      X-Ratelimit-Reset:
+      - '1452971806'
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"page":1,"results":[],"total_results":0,"total_pages":1}'
+    http_version: 
+  recorded_at: Sat, 16 Jan 2016 19:16:36 GMT
+recorded_with: VCR 3.0.1

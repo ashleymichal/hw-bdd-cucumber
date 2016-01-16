@@ -1,3 +1,4 @@
+@vcr
 Feature: User can add movie by searching for it in The Movie Database (TMDb)
 
 	As a movie fan

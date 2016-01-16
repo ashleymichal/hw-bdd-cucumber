@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/search/movie?api_key=d386198b8ada148ccfa29db06c01effd&query=Inception
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=21600
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sat, 16 Jan 2016 19:16:36 GMT
+      Etag:
+      - 2c3ddf4bf13852db711dd1901fb517fa
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '38'
+      X-Ratelimit-Reset:
+      - '1452971806'
+      Content-Length:
+      - '2447'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJwYWdlIjoxLCJyZXN1bHRzIjpbeyJwb3N0ZXJfcGF0aCI6IlwvcW1EcElI
+        cm1wSklOYVJLQWZXUWZmdGpDZHlpLmpwZyIsImFkdWx0IjpmYWxzZSwib3Zl
+        cnZpZXciOiJDb2JiLCBhIHNraWxsZWQgdGhpZWYgd2hvIGNvbW1pdHMgY29y
+        cG9yYXRlIGVzcGlvbmFnZSBieSBpbmZpbHRyYXRpbmcgdGhlIHN1YmNvbnNj
+        aW91cyBvZiBoaXMgdGFyZ2V0cyBpcyBvZmZlcmVkIGEgY2hhbmNlIHRvIHJl
+        Z2FpbiBoaXMgb2xkIGxpZmUgYXMgcGF5bWVudCBmb3IgYSB0YXNrIGNvbnNp
+        ZGVyZWQgdG8gYmUgaW1wb3NzaWJsZTogXCJpbmNlcHRpb25cIiwgdGhlIGlt
+        cGxhbnRhdGlvbiBvZiBhbm90aGVyIHBlcnNvbidzIGlkZWEgaW50byBhIHRh
+        cmdldCdzIHN1YmNvbnNjaW91cy4iLCJyZWxlYXNlX2RhdGUiOiIyMDEwLTA3
+        LTE2IiwiZ2VucmVfaWRzIjpbMjgsNTMsODc4LDk2NDgsMTJdLCJpZCI6Mjcy
+        MDUsIm9yaWdpbmFsX3RpdGxlIjoiSW5jZXB0aW9uIiwib3JpZ2luYWxfbGFu
+        Z3VhZ2UiOiJlbiIsInRpdGxlIjoiSW5jZXB0aW9uIiwiYmFja2Ryb3BfcGF0
+        aCI6IlwvczJiVDI5eTBuZ1h4eHUySUE4QU96elhUUmhkLmpwZyIsInBvcHVs
+        YXJpdHkiOjYuNDA0OTMyLCJ2b3RlX2NvdW50Ijo3NzcyLCJ2aWRlbyI6ZmFs
+        c2UsInZvdGVfYXZlcmFnZSI6Ny43OX0seyJwb3N0ZXJfcGF0aCI6IlwveXI2
+        WFg0YzdCT3Z4VmpWNmNKZVB3WmRVbExuLmpwZyIsImFkdWx0IjpmYWxzZSwi
+        b3ZlcnZpZXciOiJUaGUgQ29ib2wgSm9iIGlzIGEgZm91cnRlZW4tbWludXRl
+        IGFuaW1hdGVkIHByZXF1ZWwgdG8gQ2hyaXN0b3BoZXIgTm9sYW7igJlzIGF3
+        YXJkLXdpbm5pbmcgbW92aWU6IEluY2VwdGlvbiwgZGV0YWlsaW5nIHRoZSBo
+        ZWlzdCBvbiBNci4gS2FuZWRhJ3MgbWluZCBieSBOYXNoLCBDb2JiLCBBcnRo
+        dXIsIGFuZCBzZXZlcmFsIENvYm9sIEVuZ2luZWVyaW5nIHRodWdzLiIsInJl
+        bGVhc2VfZGF0ZSI6IjIwMTAtMTItMDciLCJnZW5yZV9pZHMiOlsxNiwyOCw1
+        Myw4NzhdLCJpZCI6NjQ5NTYsIm9yaWdpbmFsX3RpdGxlIjoiSW5jZXB0aW9u
+        OiBUaGUgQ29ib2wgSm9iIiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsInRp
+        dGxlIjoiSW5jZXB0aW9uOiBUaGUgQ29ib2wgSm9iIiwiYmFja2Ryb3BfcGF0
+        aCI6IlwvMmtHUDlnSkVPTngxaGpnUmpidXNYekFiS1FmLmpwZyIsInBvcHVs
+        YXJpdHkiOjIuODkxODU2LCJ2b3RlX2NvdW50IjoxMzcsInZpZGVvIjpmYWxz
+        ZSwidm90ZV9hdmVyYWdlIjo3LjM3fSx7InBvc3Rlcl9wYXRoIjpudWxsLCJh
+        ZHVsdCI6ZmFsc2UsIm92ZXJ2aWV3IjoiVGhlIGZpcnN0IFdvcmxkIFdyZXN0
+        bGluZyBBbGxzdGFycyBwYXkgcGVyIHZpZXcsIGxpdmUgZnJvbSBTeWRuZXks
+        IEF1c3RyYWxpYSEgQSB0b3VybmFtZW50IHRpdGxlZCBcIjcgRGVhZGx5IFNp
+        bnNcIiwgZWFjaCByb3VuZCBoYXZpbmcgYSBzdGlwdWxhdGlvbiBtYXRjaCwg
+        dGhlIHdpbm5lciB3aWxsIGJlIGNyb3duZWQgdGhlIGZpcnN0IGV2ZXIgV1dB
+        IEhlYXZ5d2VpZ2h0IENoYW1waW9uISBXcmVzdGxlcnMgc3VjaCBhcyBKZWZm
+        IEphcnJldHQsIFJvYWQgRG9nZywgSmVycnkgTGF3bGVyIGFsbCBjb21wZXRl
+        IGluIHRoZSB0b3VybmFtZW50LCB3aXRoIHRoZSBXV0EgQ29tbWlzc2lvbmVy
+        LCBCcmV0IEhhcnQgbm90IHRvbyBmYXIgYXdheSB0byBtYWtlIHN1cmUgbm90
+        aGluZyBnZXRzIHRvIGZhciBvdXQgb2YgaGFuZCEiLCJyZWxlYXNlX2RhdGUi
+        OiIyMDAxLTEwLTI2IiwiZ2VucmVfaWRzIjpbXSwiaWQiOjI1MDg0NSwib3Jp
+        Z2luYWxfdGl0bGUiOiJXV0EgVGhlIEluY2VwdGlvbiIsIm9yaWdpbmFsX2xh
+        bmd1YWdlIjoiZW4iLCJ0aXRsZSI6IldXQSBUaGUgSW5jZXB0aW9uIiwiYmFj
+        a2Ryb3BfcGF0aCI6bnVsbCwicG9wdWxhcml0eSI6MS4wMDEwNTgsInZvdGVf
+        Y291bnQiOjAsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjowfSx7InBv
+        c3Rlcl9wYXRoIjoiXC9uOW1FdmlIZ1FYRHh6ckhKTEtlSFVZTnRKVEMuanBn
+        IiwiYWR1bHQiOmZhbHNlLCJvdmVydmlldyI6Ik9uIGNlcnRhaW4gQWRhdnVz
+        OiB0aGUgYmFzaWMgc3RlcHMgaW4gQmhhcmF0YW5hdHlhbS4gVGhlIGZpcnN0
+        IHBhcnQgY292ZXJzIFRhdHRhIEFkYXZ1LCBOYXR0YSBBZGF2dSwgVmlzaGFy
+        dSBBZGF2dSAsIFRhdHRpIE1ldHRpIEFkYXZ1IGFuZCBUZWVybWFuYW0gQWRh
+        dnUuIiwicmVsZWFzZV9kYXRlIjoiIiwiZ2VucmVfaWRzIjpbXSwiaWQiOjM1
+        MDYzMiwib3JpZ2luYWxfdGl0bGUiOiJOxIF0ecSBcmFtYmhhbSIsIm9yaWdp
+        bmFsX2xhbmd1YWdlIjoiZW4iLCJ0aXRsZSI6IlRoZSBJbmNlcHRpb24gb2Yg
+        RHJhbWF0aWMgUmVwcmVzZW50YXRpb24iLCJiYWNrZHJvcF9wYXRoIjpudWxs
+        LCJwb3B1bGFyaXR5IjoxLjAwMDAwNCwidm90ZV9jb3VudCI6MSwidmlkZW8i
+        OmZhbHNlLCJ2b3RlX2F2ZXJhZ2UiOjguNX1dLCJ0b3RhbF9yZXN1bHRzIjo0
+        LCJ0b3RhbF9wYWdlcyI6MX0=
+    http_version: 
+  recorded_at: Sat, 16 Jan 2016 19:16:36 GMT
+recorded_with: VCR 3.0.1
