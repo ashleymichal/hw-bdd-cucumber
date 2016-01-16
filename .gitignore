@@ -23,8 +23,7 @@
 # Logs and databases #
 ######################
 rottenpotatoes/log/*
-rottenpotatoes/db/*.sql
-rottenpotatoes/db/*.sqlite
+rottenpotatoes/db/*.sqlite3
 
 # OS generated files #
 ######################
