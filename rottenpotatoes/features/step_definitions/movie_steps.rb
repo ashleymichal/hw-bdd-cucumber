@@ -1,3 +1,7 @@
+And /(?:|I) sort by "(.*)"/ do |sort|
+  click_link(sort)
+end
+
 Given /the following movies exist/ do |movies_table|
   movies_table.hashes.each do |movie|
     new_movie = Movie.new(:title => movie[:title], :rating => movie[:rating], :release_date => movie[:release_date], :director => movie[:director])
