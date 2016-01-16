@@ -15,7 +15,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rspec-autotest'
   gem 'autotest-rails'
-  gem 'fakeweb'
+  gem 'webmock'
   gem 'vcr'
 end
 
