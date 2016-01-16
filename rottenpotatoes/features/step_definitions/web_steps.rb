@@ -45,9 +45,8 @@ Given /^(?:|I )am on (.+)$/ do |page_name|
   visit path_to(page_name)
 end
 
-When /^(?:|I )go to (.+page)(?: sorted by "(.*)")?$/ do |page_name, sort_by|
+When /^(?:|I )go to (.+)?$/ do |page_name|
   visit path_to(page_name)
-  click_link(sort_by)
 end
 
 When /^(?:|I )press "([^"]*)"$/ do |button|
