@@ -20,14 +20,7 @@
       %th Edit
       %th Delete
   %tbody
-    - @movies.each do |movie|
-      %tr
-        %td= movie.title 
-        %td= movie.rating
-        %td= movie.release_date
-        %td= link_to "More about #{movie.title}", movie_path(movie)
-        %td= link_to "Edit", edit_movie_path(movie)
-        %td= link_to 'Destroy', movie_path(movie), :method => :delete
+    = render :partial => 'movie', :collection => @movies
 
 = link_to 'Add new movie', new_movie_path
 
