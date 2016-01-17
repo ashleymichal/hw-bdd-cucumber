@@ -15,14 +15,14 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rspec-autotest'
   gem 'autotest-rails'
-  gem 'webmock'
-  gem 'vcr'
 end
 
 group :test do
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
   gem 'factory_girl_rails'
+  gem 'webmock'
+  gem 'vcr'
 end
 group :production do
 #  gem 'pg'
@@ -40,6 +40,9 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'protected_attributes'
 gem 'themoviedb'
+
+gem 'omniauth'
+gem 'omniauth-twitter'
 
 # Use unicorn as the web server
 # gem 'unicorn'
