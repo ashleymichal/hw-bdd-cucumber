@@ -3,13 +3,20 @@ class Movie < ActiveRecord::Base
   def self.all_ratings
     %w[G PG PG-13 NC-17 R]
   end
-  attr_accessible :title, :rating, :description, :release_date, :director
+  # attr_accessible :title, :rating, :description, :release_date, :director
   validates :title, :presence => true
   validates :rating, :inclusion => {:in => Movie.all_ratings}, :unless => :grandfathered?
   validates :release_date, :presence => true
   validate :released_1930_or_later # custom validator below
-  class Movie::InvalidKeyError < StandardError ; end
 
+  before_save :capitalize_title
+
+  def capitalize_title
+    self.title = self.title.split(/\s+/).map(&:downcase).
+      map(&:capitalize).join(' ')
+  end
+  
+  class Movie::InvalidKeyError < StandardError ; end
   
   def released_1930_or_later
     errors.add(:release_date, 'must be 1930 or later') if
