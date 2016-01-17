@@ -22,9 +22,9 @@
 
 # Logs and databases #
 ######################
-rottenpotatoes/log/*
-rottenpotatoes/db/*.sqlite3
-rottenpotatoes/.byebug_history
+log/*
+db/*.sqlite3
+.byebug_history
 
 # OS generated files #
 ######################
@@ -38,9 +38,9 @@ Thumbs.db
 
 # Dev/Testing Configuration Files #
 ###################################
-rottenpotatoes/config/environments/test.rb
-rottenpotatoes/config/environments/development.rb
+config/environments/test.rb
+config/environments/development.rb
 
 # Temporary Files #
 ###################
-rottenpotatoes/tmp
+tmp
