@@ -1,6 +1,6 @@
 Rottenpotatoes::Application.routes.draw do
 	get 'auth/:provider/callback' => 'sessions#create'
-	post 'logout' => 'sessions#destroy'
+	get 'logout' => 'sessions#destroy'
 	get 'auth/failure' => 'sessions#failure'
 
 	post '/movies/search_tmdb'
