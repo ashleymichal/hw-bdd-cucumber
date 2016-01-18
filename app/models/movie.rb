@@ -1,4 +1,6 @@
 class Movie < ActiveRecord::Base
+  has_many :reviews
+  has_many :movie_goers, :through => :reviews
   attr_accessible :title, :rating, :description, :release_date, :director
   validates :title, :presence => true
 
