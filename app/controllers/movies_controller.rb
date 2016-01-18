@@ -34,7 +34,7 @@ class MoviesController < ApplicationController
   end
 
   def new
-    @movie = Movie.new
+    # default: render 'new' template
   end
 
   def create
@@ -44,6 +44,7 @@ class MoviesController < ApplicationController
       redirect_to @movie
     else
       render 'new'
+      # debugger
     end
   end
 
@@ -53,12 +54,9 @@ class MoviesController < ApplicationController
 
   def update
     @movie = Movie.find params[:id]
-    if @movie.update_attributes(movie_params)
-      flash[:notice] = "#{@movie.title} was successfully updated."
-      redirect_to movie_path(@movie)
-    else
-      render 'edit'
-    end
+    @movie.update_attributes!(movie_params)
+    flash[:notice] = "#{@movie.title} was successfully updated."
+    redirect_to movie_path(@movie)
   end
 
   def destroy
@@ -70,8 +68,8 @@ class MoviesController < ApplicationController
 
   def search_tmdb
     @search_terms = params[:search_terms]
-    @movies = Movie.find_in_tmdb(@search_terms)
-    if @movies.empty?
+    @results = Movie.find_in_tmdb(@search_terms)
+    if @results.empty?
       flash[:notice] = "'#{@search_terms}' was not found in TMDb."
       redirect_to movies_path
     end

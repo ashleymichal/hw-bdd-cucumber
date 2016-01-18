@@ -7,11 +7,6 @@
     = csrf_meta_tags
 
   %body
-    - if @current_user
-      %p.welcome Welcome, #{@current_user.name}!
-      = link_to 'Log Out', logout_path
-    - else
-      %p.login= link_to 'Log in with your Twitter account', '/auth/twitter'
     %h1.title Rotten Potatoes!
     #main
       - if flash[:notice]
